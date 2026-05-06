@@ -22,7 +22,7 @@ export const permittedRole = (roles: Role[]) => {
       return res.status(403).json({
         code: 403,
         status: "error",
-        message: "Forbidden: You do not have the required role",
+        message: "Forbidden: You do not have the required role to access this resource",
       });
     }
 
